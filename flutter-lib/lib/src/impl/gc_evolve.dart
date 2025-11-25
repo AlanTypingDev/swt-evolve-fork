@@ -893,7 +893,7 @@ class PolylineShape extends Shape {
 
   @override
   String toString() =>
-      '${isFilled ? "Fill" : ""}Polygon ${points.length ~/ 2} points${clipRect != null ? " [clipped]" : ""}';
+      '${isFilled ? "Fill" : ""}Polyline ${points.length ~/ 2} points${clipRect != null ? " [clipped]" : ""}';
 }
 
 class ArcShape extends Shape {
