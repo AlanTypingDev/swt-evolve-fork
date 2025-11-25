@@ -121,7 +121,7 @@ val dart = tasks.register<Exec>("dartRunner") {
         exclude("**/*.g.dart")
     })
     outputs.files(fileTree("../flutter-lib/lib/src") { include("**/*.g.dart") })
-    commandLine = listOf("C:/Users/alana/development/flutter/bin/cache/dart-sdk/bin/dart.exe", "run", "build_runner", "build", "--delete-conflicting-outputs")
+    commandLine = listOf("dart", "run", "build_runner", "build", "--delete-conflicting-outputs")
 }
 
 // Create tasks for each platform JAR
